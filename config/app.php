@@ -19,6 +19,8 @@ return [
 
     'password' => env('APP_PASSWORD'),
 
+    'quiz_name' => env('QUIZ_NAME'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

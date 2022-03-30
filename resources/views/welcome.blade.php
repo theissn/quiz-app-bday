@@ -11,7 +11,7 @@
 
 <body class="antialiased flex justify-center w-full h-screen items-center">
     <div class="flex flex-col items-center w-96 text-center mx-auto">
-        <h1 class="text-4xl mb-8">Freddys fede årtier</h1>
+        <h1 class="text-4xl mb-8">{{ config('app.quiz_name') }}</h1>
         <form action="{{ route('quiz') }}" method="POST">
             @csrf
             <input class="w-full my-2 border-2 text-xl py-2 px-2" type="text" placeholder="Skriv Navn" name="name" required>
