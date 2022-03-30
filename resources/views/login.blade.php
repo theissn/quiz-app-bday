@@ -13,7 +13,7 @@
     <div class="flex flex-col items-center w-96 text-center mx-auto">
         <form action="{{ route('dashboard:auth') }}" method="POST">
             @csrf
-            <input class="w-full my-2 border-2 text-xl py-2 px-2" type="text" placeholder="Password" name="password">
+            <input class="w-full my-2 border-2 text-xl py-2 px-2" type="password" placeholder="Password" name="password">
             <input type="submit" class="w-full bg-gray-200 text-xl py-2" placeholder="Start" />
         </form>
     </div>
