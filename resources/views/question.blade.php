@@ -11,7 +11,8 @@
 
 <body class="antialiased flex justify-center w-full h-screen items-center">
     <div class="flex flex-col items-center max-w-[36rem] px-6 text-left mx-4 md:mx-auto">
-        <h1 class="text-xl mb-6">{!! $question['q'] !!}</h1>
+        {{-- <h1 class="text-xl mb-6">{!! $question['q'] !!}</h1> --}}
+        <h1 class="text-xl mb-6">Spørgsmål {{ $questionID }}</h1>
 
         @forelse ($question['a'] as $key => $answer)
         <form class="w-full" action="{{ route('question') }}" method="post">
